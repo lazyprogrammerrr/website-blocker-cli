@@ -21,7 +21,7 @@ host_file = r'C:\Windows\System32\drivers\etc\hosts'
 #AUTO BLOCKER FUNCTION
 def auto_blocker():
     while True:
-        path = input("ENTER PATH HERE FOR YOUR WEBSITES LIST FILE -> ").replace('"','')         #------>    ASKING USER FOR WEBSITE LIST TEXT FILE PATH
+        path = input("ENTER PATH HERE FOR YOUR WEBSITES LIST FILE \nPRESS (SHIFT + RIGHT CLICK) TO GET FULL PATH OF FILE-> ").replace('"','')         #------>    ASKING USER FOR WEBSITE LIST TEXT FILE PATH
         try:
             with open(path,'r') as f:
                 websites = f.readlines()
@@ -84,7 +84,7 @@ def auto_blocker():
 #THIS WILL STOP THE SCRIPT IN BETWEEN GIVEN HOURS BY REMOVING WEBSITES FROM HOST FILE
 def stop_script():
     while True:
-        path = input("ENTER PATH HERE FOR YOUR WEBSITES LIST FILE -> ").replace('"','')
+        path = input("ENTER PATH HERE FOR YOUR WEBSITES LIST FILE\nPRESS (SHIFT + RIGHT CLICK) TO GET FULL PATH OF FILE -> ").replace('"','')
         try:
             with open(path,'r') as f:
                 websites = f.readlines()
